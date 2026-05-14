@@ -27,7 +27,7 @@ class ServiceInfoServiceClient extends \Grpc\BaseStub {
      * @param \Google\Protobuf\GPBEmpty $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall<\Io\Altessa\Serviceinfo\V1\ServiceInfo>
+     * @return \Grpc\UnaryCall
      */
     public function Get(\Google\Protobuf\GPBEmpty $argument,
       $metadata = [], $options = []) {

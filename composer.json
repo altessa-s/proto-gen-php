@@ -1,0 +1,20 @@
+{
+    "name": "altessa-s/proto-gen-php",
+    "description": "Generated PHP bindings (classic grpc/grpc stubs) for the altessa-s/proto schemas.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.1",
+        "ext-grpc": "*",
+        "google/protobuf": "^3.25 || ^4.0",
+        "grpc/grpc": "^1.57"
+    },
+    "autoload": {
+        "psr-4": {
+            "Io\\Altessa\\": "src/Io/Altessa/",
+            "GPBMetadata\\": "src/GPBMetadata/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

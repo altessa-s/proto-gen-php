@@ -9,7 +9,15 @@
 namespace Io\Altessa\Serviceinfo\V1;
 
 /**
- * Provides runtime information about the service instance.
+ * Provides runtime information about the service instance. Implementations
+ * MUST treat `Get` as idempotent and side-effect-free; it is safe to call
+ * from health probes and load balancers, and safe to expose via gRPC
+ * reflection.
+ *
+ * Registration order matters in some setups: register
+ * `ServiceInfoService` before gRPC reflection so reflection-based
+ * tooling (grpcurl, Postman, evans) can discover the method without an
+ * extra `.proto` import.
  */
 class ServiceInfoServiceClient extends \Grpc\BaseStub {
 
@@ -23,7 +31,9 @@ class ServiceInfoServiceClient extends \Grpc\BaseStub {
     }
 
     /**
-     * Retrieves service metadata including version and build information.
+     * Returns the current `ServiceInfo` snapshot. Cheap — implementations
+     * SHOULD compute the response from cached values and only re-evaluate
+     * time-shaped fields (`uptime`, leadership state) on demand.
      * @param \Google\Protobuf\GPBEmpty $argument input argument
      * @param array $metadata metadata
      * @param array $options call options

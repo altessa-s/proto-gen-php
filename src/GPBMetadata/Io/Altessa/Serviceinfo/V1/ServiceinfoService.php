@@ -17,14 +17,14 @@ class ServiceinfoService
         \GPBMetadata\Io\Altessa\Serviceinfo\V1\Serviceinfo::initOnce();
         $pool->internalAddGeneratedFile(
             '
-Î
+ï¿½
 3io/altessa/serviceinfo/v1/serviceinfo_service.protoio.altessa.serviceinfo.v1"
 GetServiceInfoRequest"c
 GetServiceInfoResponseI
-service_info (2&.io.altessa.serviceinfo.v1.ServiceInfoRserviceInfo2‹
+service_info (2&.io.altessa.serviceinfo.v1.ServiceInfoRserviceInfo2ï¿½
 ServiceInfoServiceu
-GetServiceInfo0.io.altessa.serviceinfo.v1.GetServiceInfoRequest1.io.altessa.serviceinfo.v1.GetServiceInfoResponseBh
-io.altessa.serviceinfo.v1PZIgithub.com/altessa-s/proto-gen-go/io/altessa/serviceinfo/v1;serviceinfov1bproto3'
+GetServiceInfo0.io.altessa.serviceinfo.v1.GetServiceInfoRequest1.io.altessa.serviceinfo.v1.GetServiceInfoResponseBï¿½
+io.altessa.serviceinfo.v1BServiceInfoServiceProtoPZIgithub.com/altessa-s/proto-gen-go/io/altessa/serviceinfo/v1;serviceinfov1bproto3'
         , true);
 
         static::$is_initialized = true;

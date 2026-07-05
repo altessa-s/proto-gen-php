@@ -18,13 +18,14 @@ class Label
         \GPBMetadata\Google\Type\Color::initOnce();
         $pool->internalAddGeneratedFile(
             '
-ç
+ÔøΩ
 io/altessa/type/v1/label.protoio.altessa.type.v1google/type/color.proto"a
 Label
-id (	B‡ARid
-value (	B‡ARvalue(
-color (2.google.type.ColorRcolorBS
-io.altessa.type.v1PZ;github.com/altessa-s/proto-gen-go/io/altessa/type/v1;typev1bproto3'
+id (	BÔøΩARid
+value (	BÔøΩARvalue(
+color (2.google.type.ColorRcolorB_
+io.altessa.type.v1B
+LabelProtoPZ;github.com/altessa-s/proto-gen-go/io/altessa/type/v1;typev1bproto3'
         , true);
 
         static::$is_initialized = true;

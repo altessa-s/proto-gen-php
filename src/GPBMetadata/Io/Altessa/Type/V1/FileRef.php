@@ -17,12 +17,12 @@ class FileRef
         \GPBMetadata\Google\Api\FieldBehavior::initOnce();
         $pool->internalAddGeneratedFile(
             '
-ø
-!io/altessa/type/v1/file_ref.protoio.altessa.type.v1"á
+ï¿½
+!io/altessa/type/v1/file_ref.protoio.altessa.type.v1"ï¿½
 FileRef
-url (	BàARurl
-id (	BàARid@
-metadata (2$.io.altessa.type.v1.FileRef.MetadataRmetadataç
+url (	Bï¿½ARurl
+id (	Bï¿½ARid@
+metadata (2$.io.altessa.type.v1.FileRef.MetadataRmetadataï¿½
 Metadata
 	mime_type (	RmimeType
 
@@ -31,8 +31,8 @@ size_bytes (R	sizeBytes
 custom (20.io.altessa.type.v1.FileRef.Metadata.CustomEntryRcustom9
 CustomEntry
 key (	Rkey
-value (	Rvalue:8BS
-io.altessa.type.v1PZ;github.com/altessa-s/proto-gen-go/io/altessa/type/v1;typev1bproto3'
+value (	Rvalue:8Ba
+io.altessa.type.v1BFileRefProtoPZ;github.com/altessa-s/proto-gen-go/io/altessa/type/v1;typev1bproto3'
         , true);
 
         static::$is_initialized = true;

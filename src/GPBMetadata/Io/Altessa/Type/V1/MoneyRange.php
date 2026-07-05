@@ -18,13 +18,13 @@ class MoneyRange
         \GPBMetadata\Google\Type\Money::initOnce();
         $pool->internalAddGeneratedFile(
             '
-”
+ï¿½
 $io/altessa/type/v1/money_range.protoio.altessa.type.v1google/type/money.proto"b
 
 MoneyRange)
-min (2.google.type.MoneyBàARmin)
-max (2.google.type.MoneyBàARmaxBS
-io.altessa.type.v1PZ;github.com/altessa-s/proto-gen-go/io/altessa/type/v1;typev1bproto3'
+min (2.google.type.MoneyBï¿½ARmin)
+max (2.google.type.MoneyBï¿½ARmaxBd
+io.altessa.type.v1BMoneyRangeProtoPZ;github.com/altessa-s/proto-gen-go/io/altessa/type/v1;typev1bproto3'
         , true);
 
         static::$is_initialized = true;

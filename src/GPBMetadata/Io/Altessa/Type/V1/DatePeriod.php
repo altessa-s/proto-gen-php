@@ -18,14 +18,14 @@ class DatePeriod
         \GPBMetadata\Google\Type\Date::initOnce();
         $pool->internalAddGeneratedFile(
             '
-§
+ï¿½
 $io/altessa/type/v1/date_period.protoio.altessa.type.v1google/type/date.proto"v
 
 DatePeriod5
 
-start_date (2.google.type.DateBàAR	startDate1
-end_date (2.google.type.DateBàARendDateBS
-io.altessa.type.v1PZ;github.com/altessa-s/proto-gen-go/io/altessa/type/v1;typev1bproto3'
+start_date (2.google.type.DateBï¿½AR	startDate1
+end_date (2.google.type.DateBï¿½ARendDateBd
+io.altessa.type.v1BDatePeriodProtoPZ;github.com/altessa-s/proto-gen-go/io/altessa/type/v1;typev1bproto3'
         , true);
 
         static::$is_initialized = true;

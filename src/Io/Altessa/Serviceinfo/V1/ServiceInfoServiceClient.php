@@ -10,7 +10,7 @@ namespace Io\Altessa\Serviceinfo\V1;
 
 /**
  * Provides runtime information about the service instance. Implementations
- * MUST treat `Get` as idempotent and side-effect-free; it is safe to call
+ * MUST treat `GetServiceInfo` as idempotent and side-effect-free; it is safe to call
  * from health probes and load balancers, and safe to expose via gRPC
  * reflection.
  *
@@ -31,19 +31,20 @@ class ServiceInfoServiceClient extends \Grpc\BaseStub {
     }
 
     /**
-     * Returns the current `ServiceInfo` snapshot. Cheap — implementations
-     * SHOULD compute the response from cached values and only re-evaluate
-     * time-shaped fields (`uptime`, leadership state) on demand.
-     * @param \Google\Protobuf\GPBEmpty $argument input argument
+     * Returns the current `ServiceInfo` snapshot for the instance handling
+     * the call. Cheap — implementations SHOULD compute the response from
+     * cached values and only re-evaluate time-shaped fields (`uptime`,
+     * leadership state) on demand.
+     * @param \Io\Altessa\Serviceinfo\V1\GetServiceInfoRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      * @return \Grpc\UnaryCall
      */
-    public function Get(\Google\Protobuf\GPBEmpty $argument,
+    public function GetServiceInfo(\Io\Altessa\Serviceinfo\V1\GetServiceInfoRequest $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/io.altessa.serviceinfo.v1.ServiceInfoService/Get',
+        return $this->_simpleRequest('/io.altessa.serviceinfo.v1.ServiceInfoService/GetServiceInfo',
         $argument,
-        ['\Io\Altessa\Serviceinfo\V1\ServiceInfo', 'decode'],
+        ['\Io\Altessa\Serviceinfo\V1\GetServiceInfoResponse', 'decode'],
         $metadata, $options);
     }
 
